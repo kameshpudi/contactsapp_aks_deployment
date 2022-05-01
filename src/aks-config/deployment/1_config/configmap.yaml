@@ -1,0 +1,14 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: uisettings
+data:
+  settings.js: |-
+    var uisettings = {
+      endpoint: '/api/contacts/',
+      resourcesEndpoint: '/api/resources/',
+      searchEndpoint: '/api/search/',
+      reportsEndpoint: '/api/visitreports/',
+      enableStats: true,
+      aiKey: 'ZTVkYzVhNmQtY2U2Yi00ZWIwLTkxZDgtOTJmMTQ3MTE5OTQ5',
+    }

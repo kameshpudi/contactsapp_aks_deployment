@@ -1,4 +1,4 @@
-# Setup Prometheus Monitoring on AKS Cluster
+#!/bin/bash
 
 location=westeurope
 aks_rg=kpr-aks-rg
@@ -135,4 +135,3 @@ kubectl create -f ./src/grafana/grafana-datasource-config.yaml  --namespace $aks
 kubectl create -f ./src/grafana/deployment.yaml --namespace $aks_monitoring_namespace
 kubectl create -f ./src/grafana/service.yaml --namespace $aks_monitoring_namespace
 kubectl create -f ./src/grafana/ingress.yaml --namespace $aks_monitoring_namespace
-
